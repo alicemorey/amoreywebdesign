@@ -44,6 +44,26 @@
 }
 
 
+/* Bottom navbar */
+.navbar-bottom {
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height:15px;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 4px -4px 8px rgba(253, 67, 222, 0.953);
+    z-index: 1000;
+}
+
+
 .bg-image {
     position: fixed;
     left: 0;
@@ -73,19 +93,33 @@
 }
 .spinning-favicon {
     display: block;
+    position: relative;
     margin: 150px auto;
     width: 300px; /* Increased from 100px */
     height: 300px; /* Increased from 100px */
-    animation: spin 4s linear infinite;
+    animation: spin-and-color  4s linear infinite;
 }
 
-
-@keyframes spin {
-    from {
+@keyframes spin-and-color {
+    0% {
         transform: rotate(0deg);
+        filter: hue-rotate(0deg);
     }
-    to {
+    20% {
+        filter: hue-rotate(30deg); /* Orange */
+    }
+    40% {
+        filter: hue-rotate(60deg); /* Yellow */
+    }
+    60% {
+        filter: hue-rotate(120deg); /* Light Green */
+    }
+    80% {
+        filter: hue-rotate(240deg); /* Blue */
+    }
+    100% {
         transform: rotate(360deg);
+        filter: hue-rotate(180deg); /* Turquoise */
     }
 }
 
@@ -93,4 +127,32 @@
     position: fixed;
     bottom: 20px;
     left: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 35px;
+        height: 100%;
+        left: 0;
+        top: 0;
+        right: auto;
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .navbar a {
+        padding: 10px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+    }
 }
