@@ -1,3 +1,14 @@
+ 
+ body {
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #143F6B;
+
+}
+
+ 
  /* nav default styles for larger screens*/
  .navbar {
     font-family: 'roboto', sans-serif;
@@ -57,7 +68,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: white;
+    background-color: #B9FFFC;
     padding: 10px 0;
     box-shadow: 4px -4px 8px rgba(253, 67, 222, 0.953);
     z-index: 1000;
@@ -129,7 +140,37 @@
     left: 20px;
 }
 
+    /* Transparent Content Box */
+    .content-box { 
+        align-items: center; /* Center child elements horizontally */
+        text-align: center;
+        margin: 0 auto; /* Center the content-box itself */
+        max-width: 800px; /* Adjust width as needed */
+        /*margin: 50px auto; /* Centers the box on the page */
+        padding: 30px; /* Adds spacing inside the box */
+        background: #C7FFD8(147, 229, 227, 0.7); /* Semi-transparent white background */
+        border-radius: 15px; /* Soft rounded corners */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds slight shadow for depth */
+    }
 
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+
+.presslinks {
+    display: grid;
+    grid-template-columns: 1fr;  /* Single column */
+    gap: 5px;  /* Space between links */
+    padding: 50px;  /* Container padding */
+    max-width: 800px;  /* Maximum width */
+    margin: 0 auto;  /* Center container */
+}
+
+    /*small screens*/
 @media screen and (max-width: 768px) {
     .navbar {
         width: 35px;
