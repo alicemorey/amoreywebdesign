@@ -31,13 +31,99 @@
         </div>
         
         <div class="container">
-            <div class="content-box">
+            <div class="grid-item" onclick="openModal('modal0')">
                <p>
                 A Morey Web Design is the design studio of artist Alice Morey, she is a contemporary British artist based in Berlin. 
-            
                </p>
             </div>
+
+            <div class="grid-container">
+                <div class="grid-item" onclick="openModal('modal1')">P1</div>
+                <div class="grid-item" onclick="openModal('modal2')">P2</div>
+                <div class="grid-item" onclick="openModal('modal3')">P3</div>
+                <div class="grid-item" onclick="openModal('modal4')">P4</div>
+                <div class="grid-item" onclick="openModal('modal5')">P5</div>
+                <div class="grid-item" onclick="openModal('modal6')">P6</div>
+            </div>
         </div>
+
+               <!---Grid modal 0-->
+         <div id="modal0" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal0')">&times;</span>
+                <h2>Info</h2>
+                <p> 
+                    <a href="https://www.alicemorey.com">alice-morey.com</a>
+                </p>
+            </div>
+        </div>
+
+         <!---Grid modal 1-->
+         <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <h2>P1</h2>
+                <p> Starter Website - 1500€ (2 weeks)
+                    For small businesses or personal brands needing a basic web presence.
+                    Tech: HTML, CSS, JS
+                    Features: 3-5 pages (Home, About, Services, Contact, Blog)
+                    Extras: Basic SEO, mobile responsiveness, contact form
+                    Includes: Domain setup & deployment
+                    Delivery: 2 weeks
+                    </p>
+            </div>
+        </div>
+
+          <!---Grid modal 2-->
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <h2>P2</h2>
+                <p>Business Growth - 2500€ (1 month)
+                    For businesses needing a dynamic site with more functionality.
+                    Tech: WordPress (or Next.js for lightweight CMS options)
+                    Features: 5-10 pages, blog, booking/contact forms, basic animations
+                    Extras: SEO optimization, Google Analytics setup
+                    Includes: 1 month of minor updates post-launch
+                    Delivery: 4 weeks
+                    
+                    </p>
+            </div>
+        </div>
+
+          <!---Grid modal 3-->
+          <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                <h2>P3</h2>
+                <p> Advanced Web App - 4500€ (3 months)
+                    For businesses needing interactive & scalable web apps.
+                    Tech: React (Next.js), Node.js, Firebase / PostgreSQL
+                    Features: Dynamic content, dashboards, login/authentication, API integration
+                    Extras: Performance optimization, automated testing
+                    Includes: 3 months of post-launch support
+                    Delivery: 12 weeks
+                    
+                    </p>
+            </div>
+        </div>
+
+          <!---Grid modal 2-->
+          <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('modal4')">&times;</span>
+                <h2>P1</h2>
+                <p> Starter Website - 1500€ (2 weeks)
+                    For small businesses or personal brands needing a basic web presence.
+                    Tech: HTML, CSS, JS
+                    Features: 3-5 pages (Home, About, Services, Contact, Blog)
+                    Extras: Basic SEO, mobile responsiveness, contact form
+                    Includes: Domain setup & deployment
+                    Delivery: 2 weeks
+                    </p>
+            </div>
+        </div>
+          
             
 </body>
 <footer>
@@ -46,5 +132,5 @@
     </nav>
 
 </footer>
-<script src="script.min.js"></script>
+<script src="scripts.js"></script>
 </html>

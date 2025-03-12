@@ -204,6 +204,64 @@
     z-index: 1;
   }
 
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.grid-item {
+    background: #C7FFD8(147, 229, 227, 0.7); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 200px; /* Set specific height */
+    width: 200px;
+    font-size: 15px;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 100%;
+    background-color: rgba(185, 255, 252, 0.8); /* Same color with 80% opacity */
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 70%;
+    border-radius: 10px;
+    position: relative;
+    animation: modalOpen 0.3s ease-out;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@keyframes modalOpen {
+    from {transform: scale(0.7)}
+    to {transform: scale(1)}
+}
+
+
     /*small screens*/
 @media screen and (max-width: 768px) {
     .navbar {
@@ -242,5 +300,9 @@
         margin-top: 10px;
         margin-bottom: 10px;
         padding-top: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
     }
 }
