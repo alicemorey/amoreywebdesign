@@ -67,7 +67,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #B9FFFC;
+    background-color: whitesmoke;
     padding: 10px 0;
     box-shadow: 4px -4px 8px rgba(253, 67, 222, 0.953);
     z-index: 1000;
@@ -220,7 +220,6 @@
     transition: transform 0.3s ease;
     height: 200px; /* Set specific height */
     width: 200px;
-    font-size: 15px;
 }
 
 .grid-item:hover {
