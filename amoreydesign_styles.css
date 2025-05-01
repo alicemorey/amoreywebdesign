@@ -378,4 +378,44 @@
     .grid-container {
         grid-template-columns: 1fr;
     }
+      /* Content Box */
+      .content-box {
+        width: 70%;
+        padding: 20px; /* Adjusted padding for a tighter design */
+        margin: 10px auto; /* Centered with margin */
+    }
+      /* Coming Soon Section */
+      .coming-soon {
+        width: 60%;
+        margin: 5px auto;
+        font-size: 16px; /* Slightly larger font size */
+    }
+   
+}
+
+@media screen and (max-width: 480px) {
+
+    /* Content Box */
+    .content-box {
+        width: 60%;
+        padding: 20px; /* Adjusted padding for a tighter design */
+        margin: 10px auto; /* Centered with margin */
+    }
+    .spinning-favicon {
+        width: 150px; /* Medium size for favicon */
+        height: 150px;
+    }
+    /* Modal */
+    .modal-content {
+        width: 85%; /* Modal width to fit better on small screens */
+        margin: 5% auto;
+    }
+
+    /* Coming Soon Section */
+    .coming-soon {
+        width: 55%;
+        margin: 5px auto;
+        font-size: 16px; /* Slightly larger font size */
+    }
+   
 }
