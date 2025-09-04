@@ -141,15 +141,15 @@
 
     /* Transparent Content Box */
     .content-box { 
-        align-items: center; /* Center child elements horizontally */
-        text-align: center;
+        align-items: left; /* Center child elements horizontally */
+        text-align: left;
         margin: 0 auto; /* Center the content-box itself */
         max-width: 800px; /* Adjust width as needed */
         /*margin: 50px auto; /* Centers the box on the page */
         padding: 30px; /* Adds spacing inside the box */
-        background: #C7FFD8(147, 229, 227, 0.7); /* Semi-transparent white background */
+        background: rgba(231, 159, 206, 0.6); /* Pink, less transparent */
         border-radius: 15px; /* Soft rounded corners */
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds slight shadow for depth */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Adds slight shadow for depth */
     }
 
     .container {
