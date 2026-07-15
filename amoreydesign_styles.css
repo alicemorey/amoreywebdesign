@@ -148,7 +148,7 @@
         /*margin: 50px auto; /* Centers the box on the page */
         padding: 30px; /* Adds spacing inside the box */
         background: rgba(231, 159, 206, 0.6); /* Pink, less transparent */
-        border-radius: 15px; /* Soft rounded corners */
+        border-radius: 5px; /* Soft rounded corners */
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Adds slight shadow for depth */
     }
 
@@ -324,6 +324,7 @@
     background-color: #f9f9f9;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
 }
 
 .concept-container h1 {
